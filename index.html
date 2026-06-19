@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayım Gayrimenkul</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+#kont1{
+    background-color: rgb(72, 115, 255);
+    width: 100%;
+    height: 40px;
+}
+#i1,#e1,#h1,#a1{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 20%;
+    width: 200px;
+    height: 30px;
+    margin-left: 18%;
+    margin-top: 3.5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 0px;
+}
+#kont1 *:hover{
+    transition: 0.2s;
+        background-color: rgb(26, 26, 26);
+        box-shadow: 2.5px 2.5px 0px 0px;
+}
+#kont1 *:focus{
+    transition: 0.3s;
+    background-color: rgb(63, 63, 63);
+    box-shadow: 3px 3px 0px 0px;
+}
+#i2,#e2,#h2{
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <div id="kont1">
+        <button onclick="B1()" id="i1">İlanlar</button>
+        <button onclick="B2()" id="e1">Ekibimiz</button>
+        <button onclick="B3()" id="h1">Hakkımızda</button>
+        <!--<button onclick="B4()" id="a1">3D Apartman Modeli</button>-->
+    </div>
+    <div id="i2">
+        <table border="1">
+    <tr>
+        <th>İlan Başlığı</th>
+        <th>Fiyat</th>
+        <th>Öne Çıkan Özellikleri</th>
+    </tr>
+        <tr>
+        <th>Kayım Rezidans Sitesinde Deniz Manzaralı 2+1 Kiralık Daire</th>
+        <th>47000TL</th>
+        <th>Maltepenin Prestijli Lokasyonunda Marmaray'a,Sahile ve Metroya yakın ve bölgedeki okullara çok yakındır.</th>
+    </tr>
+        <tr>
+        <th>Maltepe Cevizli Kayım Rezidans Sitesinde 2+1 Satılık Daire</th>
+        <th>10.500.000TL</th>
+        <th>Yatırım ve Oturum İçin Kaçırılmayacak Fırsat. 24 Saat güvenli,yüzme havuzuna sahip,çocuk oyun alanları var,kapalı otopark var.</th>
+    </tr>
+    <tr>
+        <th>Maltepe Cevizli Kayım Rezidans Sitesinde 2+1 Satılık Daire</th>
+        <th>10.500.000TL</th>
+        <th>Yatırım ve Oturum İçin Kaçırılmayacak Fırsat. 24 Saat güvenli,yüzme havuzuna sahip,çocuk oyun alanları var,kapalı otopark var.</th>
+    </tr>
+    <tr>
+        <th>Kayım Rezidans Sitesinde Satılık 2+1 Daire</th>
+        <th>11.500.000TL</th>
+        <th>Havuzlu,Çocuk Oyun Parkları,7/24 Güvenlikli,Bol Yeşil Alanlı Bir Daire</th>
+    </tr>
+    <tr>
+        <th>Başakşehirde Özel Projede Lüks Villa | Alya Bahçe |</th>
+        <th>25.000.000TL</th>
+        <th>Yeşillikler içinde,özel projede ayrıcalıklı villa yaşamı.7/24 Güvenlik,Açık Ve Kapalı Yüzme Havuzu,Sauna ve Buhar Odası,Villaya Özel türk hamamı,Ferah Yaşam Alanı,Düzenli güvenli ve elit site konsepti</th>
+    </tr>
+        <tr>
+        <th>Suadiye Elit Park Sitesinde Havuzlu,7/24 Güvenlikli 3+1 Sıfır!</th>
+        <th>21.500.000TL</th>
+        <th>Yüksek Değer Artışı Potansiyeli,Havuzlu,3+1 Daire</th>
+    </tr>
+</table>
+<h4>Aktek: </h4>
+<iframe src="https://aktekinsaat.com.tr/satistaki-projeler/kayim-rezidans/" frameborder="0" width="100%" height="400px" style="border-radius: 10px;"></iframe>
+    </div>
+        <div id="e2">
+<table border="2">
+    <tr>
+        <th>Müdürümüz</th>
+    </tr>
+        <tr>
+        <th>Abdülkerim Buyruk</th>
+    </tr>
+</table>
+        </div>
+        <div id="h2">
+            <h4>Hakkımızda:</h4>
+            <p>Müdürümüz:Abdülkerim Buyruk Biz bir emlak şirketiyiz.</p>
+        </div>
+        <div id="a2"></div>
+        <script>
+            function B1(){
+                document.getElementById("i2").style.display = "block";
+                document.getElementById("e2").style.display = "none";
+                document.getElementById("a2").style.display = "none";
+                document.getElementById("h2").style.display = "none";
+            }
+            function B2(){
+                document.getElementById("i2").style.display = "none";
+                document.getElementById("e2").style.display = "block";
+                document.getElementById("a2").style.display = "none";
+                document.getElementById("h2").style.display = "none";
+            }
+            function B3(){
+                document.getElementById("i2").style.display = "none";
+                document.getElementById("e2").style.display = "none";
+                document.getElementById("a2").style.display = "none";
+                document.getElementById("h2").style.display = "block";
+            }
+            function B4(){
+                document.getElementById("a2").style.display = "block";
+                document.getElementById("i2").style.display = "none";
+                document.getElementById("e2").style.display = "none";
+                document.getElementById("h2").style.display = "none";
+            }
+        </script>
+        <!--<script>
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById("a2").appendChild(renderer.domElement);
+
+
+    // Işık ekleyelim
+    const light = new THREE.DirectionalLight(0xffffff, 1);
+    light.position.set(1, 1, 1).normalize();
+    scene.add(light);
+
+    camera.position.z = 5;
+
+    // Animasyon döngüsü
+    function animate() {
+      requestAnimationFrame(animate);
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    // Butona tıklayınca modeli yükle
+    document.getElementById("a1").addEventListener("click", () => {
+      const loader = new THREE.OBJLoader();
+      loader.load("apartman.obj", function(object) {
+        object.scale.set(0.5, 0.5, 0.5); // boyut ayarı
+        scene.add(object);
+      });
+    });
+        </script>-->
+</body>
+</html>
