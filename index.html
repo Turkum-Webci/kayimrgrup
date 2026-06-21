@@ -116,6 +116,12 @@ align-items: center;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
 }
+#h2 *{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: italic;
+}
     </style>
 </head>
 <body>
@@ -161,7 +167,7 @@ align-items: center;
 </table>
         </div>
         <div id="h2">
-            <h4>Hakkımızda:</h4>
+            <h4 style="font-size: 34px;">Hakkımızda:</h4>
             <p>1999 yılında kurulan firmamız, inşaat sektöründe <u>güvenilir</u> ve <u>yenilikçi</u> projelerle hizmet vermektedir. Kurulduğumuz günden bu yana kaliteyi, müşteri memnuniyetini ve sürdürülebilirliği ön planda tutarak birçok başarılı projeye imza attık.</p>
         </div>
         <div id="g2">
@@ -196,7 +202,7 @@ align-items: center;
             }
             function DGSTR(){
                 if(rsmkc == 2){
-                    rsmkc = 1;
+                    rsmkc = 3;
                     document.getElementById("img1").src = "rsm1.png";
                     document.getElementById("img1").style.opacity = "0.8";
                     setTimeout(function(){
@@ -206,6 +212,62 @@ align-items: center;
                 else if(rsmkc == 1){
                     rsmkc = 2;
                     document.getElementById("img1").src = "rsm2.png";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+                else if(rsmkc == 3){
+                    rsmkc = 4;
+                    document.getElementById("img1").src = "a3.jpeg";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+else if(rsmkc == 4){
+                    rsmkc = 5;
+                    document.getElementById("img1").src = "a4.jpeg";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+                else if(rsmkc == 5){
+                    rsmkc = 6;
+                    document.getElementById("img1").src = "a5.jpeg";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+                else if(rsmkc == 6){
+                    rsmkc = 7;
+                    document.getElementById("img1").src = "a6.jpeg";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+                else if(rsmkc == 7){
+                    rsmkc = 8;
+                    document.getElementById("img1").src = "a7.jpeg";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+                else if(rsmkc == 8){
+                    rsmkc = 9;
+                    document.getElementById("img1").src = "a8.jpeg";
+                    document.getElementById("img1").style.opacity = "0.8";
+                    setTimeout(function(){
+                        document.getElementById("img1").style.opacity = "1";
+                    }, 200);
+                }
+                else if(rsmkc == 9){
+                    rsmkc = 1;
+                    document.getElementById("img1").src = "a9.jpg";
                     document.getElementById("img1").style.opacity = "0.8";
                     setTimeout(function(){
                         document.getElementById("img1").style.opacity = "1";
